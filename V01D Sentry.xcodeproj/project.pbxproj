@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C40BABD00947A6AFD0CE64 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D4353E7D2470089CF2E58 /* libPods.a */; };
+		45713AE9190555300065A4D5 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 45713AE8190555300065A4D5 /* Event.m */; };
+		45713AEC19055B070065A4D5 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 45713AEB19055B070065A4D5 /* Configuration.m */; };
 		45783BFB1905526E0042E37D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45783BFA1905526E0042E37D /* Foundation.framework */; };
 		45783BFD1905526E0042E37D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45783BFC1905526E0042E37D /* CoreGraphics.framework */; };
 		45783BFF1905526E0042E37D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45783BFE1905526E0042E37D /* UIKit.framework */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C9D4353E7D2470089CF2E58 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45713AE7190555300065A4D5 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		45713AE8190555300065A4D5 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		45713AEA19055B070065A4D5 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		45713AEB19055B070065A4D5 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		45783BF71905526E0042E37D /* V01D Sentry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "V01D Sentry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45783BFA1905526E0042E37D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45783BFC1905526E0042E37D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +64,7 @@
 		45783C241905526E0042E37D /* V01D SentryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "V01D SentryTests-Info.plist"; sourceTree = "<group>"; };
 		45783C261905526E0042E37D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45783C281905526E0042E37D /* V01D_SentryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V01D_SentryTests.m; sourceTree = "<group>"; };
+		502482F851354877ACB0D1D2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 				45783BFD1905526E0042E37D /* CoreGraphics.framework in Frameworks */,
 				45783BFF1905526E0042E37D /* UIKit.framework in Frameworks */,
 				45783BFB1905526E0042E37D /* Foundation.framework in Frameworks */,
+				43C40BABD00947A6AFD0CE64 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,7 @@
 				45783C221905526E0042E37D /* V01D SentryTests */,
 				45783BF91905526E0042E37D /* Frameworks */,
 				45783BF81905526E0042E37D /* Products */,
+				502482F851354877ACB0D1D2 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +119,7 @@
 				45783BFC1905526E0042E37D /* CoreGraphics.framework */,
 				45783BFE1905526E0042E37D /* UIKit.framework */,
 				45783C1C1905526E0042E37D /* XCTest.framework */,
+				0C9D4353E7D2470089CF2E58 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,7 +129,11 @@
 			children = (
 				45783C091905526E0042E37D /* AppDelegate.h */,
 				45783C0A1905526E0042E37D /* AppDelegate.m */,
+				45713AE7190555300065A4D5 /* Event.h */,
+				45713AE8190555300065A4D5 /* Event.m */,
 				45783C0C1905526E0042E37D /* Main.storyboard */,
+				45713AEA19055B070065A4D5 /* Configuration.h */,
+				45713AEB19055B070065A4D5 /* Configuration.m */,
 				45783C0F1905526E0042E37D /* MasterViewController.h */,
 				45783C101905526E0042E37D /* MasterViewController.m */,
 				45783C121905526E0042E37D /* DetailViewController.h */,
@@ -164,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45783C2C1905526E0042E37D /* Build configuration list for PBXNativeTarget "V01D Sentry" */;
 			buildPhases = (
+				F966279BF12D464D9483923E /* Check Pods Manifest.lock */,
 				45783BF31905526E0042E37D /* Sources */,
 				45783BF41905526E0042E37D /* Frameworks */,
 				45783BF51905526E0042E37D /* Resources */,
+				372C0FF00F6E4D4CA8F5286E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +267,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		372C0FF00F6E4D4CA8F5286E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F966279BF12D464D9483923E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45783BF31905526E0042E37D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,7 +307,9 @@
 			files = (
 				45783C0B1905526E0042E37D /* AppDelegate.m in Sources */,
 				45783C111905526E0042E37D /* MasterViewController.m in Sources */,
+				45713AE9190555300065A4D5 /* Event.m in Sources */,
 				45783C071905526E0042E37D /* main.m in Sources */,
+				45713AEC19055B070065A4D5 /* Configuration.m in Sources */,
 				45783C141905526E0042E37D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +432,7 @@
 		};
 		45783C2D1905526E0042E37D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502482F851354877ACB0D1D2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -392,6 +446,7 @@
 		};
 		45783C2E1905526E0042E37D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502482F851354877ACB0D1D2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -462,6 +517,7 @@
 				45783C2E1905526E0042E37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45783C2F1905526E0042E37D /* Build configuration list for PBXNativeTarget "V01D SentryTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +526,7 @@
 				45783C311905526E0042E37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

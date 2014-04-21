@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 
+#import "Event.h"
+
 @interface DetailViewController ()
 - (void)configureView;
 @end
@@ -31,7 +33,15 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        Event *event = self.detailItem;
+        
+        self.title = event.title;
+        
+        self.detailDescriptionLabel.text = event.abstract;
+        
+        self.detailDescriptionLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        self.detailDescriptionLabel.numberOfLines = 0;
+        [self.detailDescriptionLabel sizeToFit];
     }
 }
 
