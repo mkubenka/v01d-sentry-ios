@@ -12,6 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Configure the Sentry client
+    [RavenClient clientWithDSN:sentryDSN];
+    
+    // Install the global error handler
+    [[RavenClient sharedClient] setupExceptionHandler];
+    
     // Override point for customization after application launch.
     return YES;
 }
